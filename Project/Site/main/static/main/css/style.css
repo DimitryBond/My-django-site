@@ -7,14 +7,6 @@ body {
     background-color: #ffffff;
 }
 
-aside {
-    float: left;
-    background-color: #807b7b;
-    width: 20%;
-    height: 80vh;
-    color: #ffffff;
-}
-
 /* header */
 .page-header {
     margin-bottom: 0px;
@@ -64,5 +56,39 @@ aside {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+
+/* aside */
+aside {
+    float: left;
+    background-color: #807b7b;
+    width: 20%;
+    height: 85vh;
+    color: #ffffff;
+    display: block;
+}
+
+aside h3 {
+    padding-top: 4px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+aside ul {
+    list-style: none;
+    border-bottom: 3px solid #000000;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+aside ul li{
+    font-size: 16px;
+    text-decoration: none;
 }
 
