@@ -1,0 +1,60 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200;1,600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="services">
+          <div class="services-content">
+            <a class="profession" href="#">IOS-разработчик</a>
+            <p class="caption">Тема</p>
+            <ul class="theme-switcher">
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
+            <p class="caption">Шрифт</p>
+            <ul class="fonts">
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <aside>
+        <span>ios</span>
+        <h3>навигация</h3>
+        <ul>
+            <!-- почему то не работают иконки((( -->
+            <a href=""><li><i class="fa-solid fa-house"></i>Главная</li></a>
+            <a href=""><li><i class="fa-solid fa-house"></i>Про меня</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
