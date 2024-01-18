@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -115,8 +115,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-
-STATIC_URL = 'static/'
+STATIC_ROOT = '/var/www/static'
+STATIC_URL = '/static/'
 #STATIC_ROOT = 'static'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
