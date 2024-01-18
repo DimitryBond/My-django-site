@@ -3,8 +3,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #141414;
+    width: 100%;
+    height: 100%;
 }
 
 /* header */
@@ -13,11 +15,11 @@ body {
 }
 
 .services {
-    background-color: #5b5b5b;
+    background-color: #000000;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 30px;
-    border-bottom: 3px solid rgb(61, 46, 83);
+    border-bottom: 1px solid rgb(95, 153, 255);
 }
 
 .services-content {
@@ -36,7 +38,7 @@ body {
     font-size: 26px;
     font-weight: bold;
     line-height: 30px;
-    color: #d7032b;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -57,38 +59,96 @@ body {
     line-height: 18px;
     text-transform: uppercase;
 }
-  
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 /* aside */
 aside {
     float: left;
-    background-color: #807b7b;
+    background-color: #000000;
     width: 20%;
-    height: 85vh;
+    height: 100vh;
     color: #ffffff;
-    display: block;
+    border-right: 1px solid #5f99ff;
+    margin-right: 40px;
 }
 
-aside h3 {
-    padding-top: 4px;
-    padding-bottom: 30px;
-    padding-left: 25px;
+.nav {
+    padding: 10px 10px;
+
+}
+
+.nav h3 {
+    /*padding-top: 0px;
+    padding-bottom: 1px;*/
+    padding-left: 15px;
     font-size: 22px;
     font-weight: bold;
     line-height: 30px;
-    color: #000000;
-    border-bottom: 3px solid #000000;
+    color: #ffffff;
 }
 
-aside ul {
+.nav ul {
+    width: 18%;
     list-style: none;
-    border-bottom: 3px solid #000000;
-    padding-left: 60px;
-    padding-bottom: 20px;
+    padding-left: 40px;
 }
 
-aside ul li{
+.nav ul li {
+    color: #5f99ff;
+}
+
+/* main-content */
+
+.main-content {
+    margin: 0px;
+    padding: 0px;
     font-size: 16px;
-    text-decoration: none;
+    line-height: 24px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 2%;
+    margin: 40px 40px;
+    padding: 10px 30px;
+}
+
+.content h2{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.content p{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* footer */
+
+.main-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    font-size: 14px;
+    line-height: 12px;
+    border-top: 1px solid #5f99ff;
+
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0 55px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
