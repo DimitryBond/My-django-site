@@ -74,7 +74,7 @@ body {
 aside {
     float: left;
     background-color: #000000;
-    width: 30vw;
+    width: 20%;
     color: #ffffff;
     border-right: 1px solid #5f99ff;
     margin-right: 40px;
@@ -114,10 +114,11 @@ aside {
 }
 
 .content {
+    width: 65vw;
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    border-radius: 2%;
+    border-radius: 50px;
     margin: 40px 40px;
     padding: 10px 30px;
 }
@@ -150,7 +151,7 @@ aside {
 
 .footer-container {
     margin: 0 auto;
-    padding: 0 55px;
+    padding-left: 55px;
     display: flex;
     /*justify-content: space-between;*/
 }
