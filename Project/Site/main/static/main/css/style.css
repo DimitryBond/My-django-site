@@ -34,6 +34,11 @@ body {
     margin: 0 auto;
 }
 
+.services-content ul li button{
+    font-size: 26px;
+    text-decoration: none;
+}
+
 .openbtn {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -53,15 +58,6 @@ body {
 
 .openbtn:active {
     opacity: 0.5;
-}
-
-.caption {
-    margin: 0;
-    margin-right: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
 }
 
 /* aside */
@@ -110,11 +106,12 @@ body {
 /* main-content */
 
 .main-content {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
     padding: 0px;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 200px;
 }
 
 .content {
@@ -159,7 +156,56 @@ body {
     /*justify-content: space-between;*/
 }
 
+img {
+    margin: 0 auto;
+}
 
+/* Theme: light */
 
+.page.light html {
+    color: #000000;
+    background-color: #f3f2f8;
+}
+
+.page.light {
+    color: #000000;
+    background-color: #f3f2f8;
+}
+
+/*.page.dark .theme-button-light {
+  background-image: url("../img/sun-light.svg");
+}*/
+
+.page.light .services {
+    color: #000000;
+    background-color: #f3f2f8;
+}
+
+.page.light .openbtn {
+    color: #000000;
+}
+
+.page.light .sidenav {
+    color: #000000;
+    background-color: #f3f2f8;
+}
+
+.page.light .sidenav a:hover {
+    color: #1c1c1e;
+}
+
+.page.light .main-content {
+    background-color: #f3f2f8;
+}
+
+.page.light .content {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.page.light .main-footer {
+    color: #000000;
+    background-color: #f3f2f8;
+}
 
 

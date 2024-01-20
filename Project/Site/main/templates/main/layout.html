@@ -18,24 +18,20 @@
 
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body class="page">
     <header class="page-header">
         <div class="services">
             <div class="services-content">
                 <span class="openbtn" onclick="openNav()">☰ IOS-разработчик</span>
+
                 <p class="caption">Тема</p>
                 <ul class="theme-switcher">
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                </ul>
-                <p class="caption">Шрифт</p>
-                <ul class="fonts">
-                    <li>
-                    </li>
-                    <li>
-                    </li>
+                <li>
+                    <button class="theme-button-dark" type="button">🌚</button>
+                </li>
+                <li>
+                    <button class="theme-button-light active" type="button">🌝</button>
+                </li>
                 </ul>
             </div>
         </div>
@@ -79,5 +75,6 @@
       </div>
     </footer>
     <script src="{% static 'main/js/Sidenav.js' %}"></script>
+    <script src="{% static 'main/js/themes.js' %}"></script>
 </body>
 </html>
