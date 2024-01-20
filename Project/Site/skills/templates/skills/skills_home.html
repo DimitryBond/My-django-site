@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Востребованность{% endblock %}
+
+{% block content %}
+    <h2>Навыки</h2>
+
+    <p>ТОП-20 навыков по годам</p>
+        <table border="1" class="dataframe">
+        <thead>
+        <tr>
+            <th>Год</th>
+            <th>Количество вакансий</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>2023</th>
+            <th>2023</th>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>ТОП-20 навыков по годам</p>
+    <img src="{% static 'demand/img/заглушка график.jpg' %}">
+
+{% endblock %}
