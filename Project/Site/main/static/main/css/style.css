@@ -64,21 +64,7 @@ body {
     text-transform: uppercase;
 }
 
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.conteiner{
-    display: flex;
-    flex: none;
-    margin: 110px 0px 0px 0px;
-    padding: 0;
-}
-
 /* aside */
-
 
 .sidenav {
     height: 100%;
@@ -135,7 +121,7 @@ body {
     flex-direction: column;
     background-color: #1c1c1e;
     border-radius: 50px;
-    margin: 40px 40px;
+    margin: 40px 100px;
     padding: 10px 30px;
 }
 

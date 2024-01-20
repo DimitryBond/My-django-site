@@ -50,16 +50,14 @@
       <a href="{% url 'home' %}">Последние вакансии</a>
     </aside>
 
-    <div class="wrapper">
-      <div class="conteiner">
-        <main class="main-content">
-          <div class="content">
-              {% block content %}
-              {% endblock %}
-          </div>
-        </main>
+
+    <main class="main-content">
+      <div class="content">
+          {% block content %}
+          {% endblock %}
       </div>
-    </div>
+    </main>
+
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-column">
