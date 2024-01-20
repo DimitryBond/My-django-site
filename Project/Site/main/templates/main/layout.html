@@ -21,39 +21,37 @@
 <body>
     <header class="page-header">
         <div class="services">
-          <div class="services-content">
-            <a class="profession" href="#">IOS-разработчик</a>
-            <p class="caption">Тема</p>
-            <ul class="theme-switcher">
-              <li>
-              </li>
-              <li>
-              </li>
-            </ul>
-            <p class="caption">Шрифт</p>
-            <ul class="fonts">
-              <li>
-              </li>
-              <li>
-              </li>
-            </ul>
-          </div>
+            <div class="services-content">
+                <span class="openbtn" onclick="openNav()">☰ IOS-разработчик</span>
+                <p class="caption">Тема</p>
+                <ul class="theme-switcher">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+                <p class="caption">Шрифт</p>
+                <ul class="fonts">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <aside id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <h3>Содержание</h3>
+      <a href="{% url 'home' %}">Главная</a>
+      <a href="{% url 'demand_home' %}">Востребованность</a>
+      <a href="{% url 'about' %}">География</a>
+      <a href="{% url 'home' %}">Последние вакансии</a>
+    </aside>
+
     <div class="wrapper">
       <div class="conteiner">
-        <aside>
-          <div class="nav">
-            <h3>Содержание</h3>
-            <ul>
-                <a href="{% url 'home' %}"><li>Главная</li></a>
-                <a href="{% url 'demand_home' %}"><li>Востребованность</li></a>
-                <a href="{% url 'about' %}"><li>География</li></a>
-                <a href="{% url 'home' %}"><li>Навыки</li></a>
-                <a href="{% url 'home' %}"><li>Последние вакансии</li></a>
-            </ul>
-          </div>
-        </aside>
         <main class="main-content">
           <div class="content">
               {% block content %}
@@ -81,5 +79,6 @@
         </ul>
       </div>
     </footer>
+    <script src="{% static 'main/js/Sidenav.js' %}"></script>
 </body>
 </html>
