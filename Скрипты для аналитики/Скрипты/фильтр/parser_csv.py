@@ -1,5 +1,4 @@
 import csv
-import pandas
 
 
 def universal_csv_parser(file_name: str) -> list:
@@ -11,33 +10,52 @@ def universal_csv_parser(file_name: str) -> list:
         for row in reader:
             if len(row) == len(list_naming) and ('' not in row):
                 vacancy = dict(zip(list_naming, row))
-                vacancies.append(vacancy)
+                if 'ios' in vacancy['name'].lower():
+                    vacancy = convert_salary(vacancy)
+                    vacancies.append(vacancy)
 
     return vacancies
 
 
-def write_file(data: list):
-    # df = pandas.DataFrame(columns=["index", "name", "key_skills", "salary_from",
-    #                                "salary_to", "salary_currency", "area_name", "published_at"])
-    #
-    # for num, value in enumerate(data):
-    #     df.loc[num] = [value.get('')]
-    #
-    # df.to_csv(r"current_ios_vacancies.csv", index=False, header=False)
-
-    with open('data.csv', 'w', encoding='utf-8-sig', newline='') as f:
+def write_file(vacancies_data: list):
+    with open('vacancies_ios.csv', 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.writer(f)
-        w.writerow(["index", "name", "key_skills", "salary_from",
+        w.writerow(["name", "key_skills", "salary_from",
                     "salary_to", "salary_currency", "area_name", "published_at"])
-        # for element in data:
-        #     for key in element.keys():
-        #         w.writerow([element[key]])
 
-        for item in data:
+        for item in vacancies_data:
             w.writerow(item.values())
-        # w.writerows(data)
+
+
+def convert_salary(vacancy: dict) -> dict:
+    currency_to_rub = {
+        "AZN": 35.68,
+        "BYR": 23.91,
+        "EUR": 59.90,
+        "GEL": 21.74,
+        "KGS": 0.76,
+        "KZT": 0.13,
+        "RUR": 1,
+        "UAH": 1.64,
+        "USD": 60.66,
+        "UZS": 0.0055,
+    }
+
+    salary_from = float(vacancy.get("salary_from", 0))
+    salary_to = float(vacancy.get("salary_to", 0))
+    salary_currency = vacancy.get("salary_currency", "RUR")
+
+    if salary_currency != "RUR":
+        salary_from *= currency_to_rub.get(salary_currency, 1)
+        salary_to *= currency_to_rub.get(salary_currency, 1)
+
+    vacancy['salary_from'] = salary_from
+    vacancy['salary_to'] = salary_to
+    vacancy['salary_currency'] = "RUR"
+
+    return vacancy
 
 
 if __name__ == "__main__":
-    data = universal_csv_parser("ios_vacancies.csv")
+    data = universal_csv_parser("vacancies.csv")
     write_file(data)
