@@ -35,8 +35,25 @@ body {
 }
 
 .services-content ul li button{
-    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.services-content ul li {
     text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.services-content ul li button img{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border-radius: 50px;
+
 }
 
 .openbtn {
@@ -59,6 +76,10 @@ body {
 .openbtn:active {
     opacity: 0.5;
 }
+
+
+
+
 
 /* aside */
 
@@ -120,7 +141,10 @@ body {
     background-color: #1c1c1e;
     border-radius: 50px;
     margin: 40px 100px;
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
 }
 
 .content h2{
@@ -135,7 +159,26 @@ body {
     text-align: center;
 }
 
+.main-nav {
+    list-style-type: none;
 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #0a8af6;
+}
+
+.diagrams {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.diagrams div {
+    padding: 0 30px;
+}
 
 /* footer */
 
@@ -156,7 +199,7 @@ body {
     /*justify-content: space-between;*/
 }
 
-img {
+.content img {
     margin: 0 auto;
 }
 
@@ -171,10 +214,6 @@ img {
     color: #000000;
     background-color: #f3f2f8;
 }
-
-/*.page.dark .theme-button-light {
-  background-image: url("../img/sun-light.svg");
-}*/
 
 .page.light .services {
     color: #000000;

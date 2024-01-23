@@ -1,47 +1,95 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}Востребованность{% endblock %}
+{% block title %}География{% endblock %}
 
 {% block content %}
     <h2>География</h2>
 
-    <p>Уровень зарплат по городам</p>
-    <img src="{% static 'demand/img/заглушка график.jpg' %}">
-
-    <p>Доля вакансий по городам</p>
-    <img src="{% static 'demand/img/заглушка график.jpg' %}">
-
-    <p>Уровень зарплат по городам</p>
+    <h3>Статистика по городам</h3>
     <table border="1" class="dataframe">
         <thead>
         <tr>
-            <th>Год</th>
-            <th>Количество вакансий</th>
+            <th>Город</th>
+            <th>Уровень зарплат</th>
+            <th>Город</th>
+            <th>Доля вакансий, %</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th>2023</th>
-            <th>2023</th>
+            <th>Москва</th>
+            <th>187648</th>
+            <th>Москва</th>
+            <th>29,76</th>
+        </tr>
+        <tr>
+            <th>Киев</th>
+            <th>155112</th>
+            <th>Санкт-Петербург</th>
+            <th>13,19</th>
+        </tr>
+        <tr>
+            <th>Санкт-Петербург</th>
+            <th>153886</th>
+            <th>Новосибирск</th>
+            <th>5,64</th>
+        </tr>
+        <tr>
+            <th>Самара</th>
+            <th>150952</th>
+            <th>Минск</th>
+            <th>4,57</th>
+        </tr>
+        <tr>
+            <th>Казань</th>
+            <th>148123</th>
+            <th>Алматы</th>
+            <th>2,86</th>
+        </tr>
+        <tr>
+            <th>Нижний Новгород</th>
+            <th>148077</th>
+            <th>Ростов-на-Дону</th>
+            <th>2,58</th>
+        </tr>
+        <tr>
+            <th>Екатеринбург</th>
+            <th>145990</th>
+            <th>Казань</th>
+            <th>2,46</th>
+        </tr>
+        <tr>
+            <th>Пермь</th>
+            <th>137425</th>
+            <th>Екатеринбург</th>
+            <th>2,22</th>
+        </tr>
+        <tr>
+            <th>Новосибирск</th>
+            <th>132089</th>
+            <th>Краснодар</th>
+            <th>1,85</th>
+        </tr>
+        <tr>
+            <th>Ульяновск</th>
+            <th>126536</th>
+            <th>Томск</th>
+            <th>1,83</th>
         </tr>
         </tbody>
     </table>
+    <div class="diagrams">
+        <div>
+            <p>Уровень зарплат по городам</p>
+            <img src="{% static 'demand/img/заглушка график.jpg' %}">
+        </div>
+        <div>
+            <p>Доля вакансий по городам</p>
+            <img src="{% static 'demand/img/заглушка график.jpg' %}">
+        </div>
+    </div>
 
-    <p>Доля вакансий по городам</p>
-    <table border="1" class="dataframe">
-        <thead>
-        <tr>
-            <th>Год</th>
-            <th>Количество вакансий</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>2023</th>
-            <th>2023</th>
-        </tr>
-        </tbody>
-    </table>
+
 
 {% endblock %}

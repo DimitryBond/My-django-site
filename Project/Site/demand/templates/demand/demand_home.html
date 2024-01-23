@@ -5,43 +5,74 @@
 
 {% block content %}
     <h2>Востребованность</h2>
-
-    <p>Динамика уровня зарплат по годам</p>
-    <img src="{% static 'demand/img/заглушка график.jpg' %}">
-
-    <p>Динамика количества вакансий по годам</p>
-    <img src="{% static 'demand/img/заглушка график.jpg' %}">
-
-    <p>Динамика уровня зарплат по годам</p>
+    <h3>Динамика уровня зарплат и количества вакансий по годам</h3>
     <table border="1" class="dataframe">
         <thead>
         <tr>
             <th>Год</th>
+            <th>Средняя зарплата</th>
             <th>Количество вакансий</th>
         </tr>
         </thead>
         <tbody>
         <tr>
+            <th>2015</th>
+            <th>107347</th>
+            <th>306</th>
+        </tr>
+        <tr>
+            <th>2016</th>
+            <th>104320</th>
+            <th>495</th>
+        </tr>
+        <tr>
+            <th>2017</th>
+            <th>107984</th>
+            <th>470</th>
+        </tr>
+        <tr>
+            <th>2018</th>
+            <th>104397</th>
+            <th>615</th>
+        </tr>
+        <tr>
+            <th>2019</th>
+            <th>123334</th>
+            <th>696</th>
+        </tr>
+        <tr>
+            <th>2020</th>
+            <th>174403</th>
+            <th>1010</th>
+        </tr>
+        <tr>
+            <th>2021</th>
+            <th>164704</th>
+            <th>1345</th>
+        </tr>
+        <tr>
+            <th>2022</th>
+            <th>197596</th>
+            <th>1100</th>
+        </tr>
+        <tr>
             <th>2023</th>
-            <th>2023</th>
+            <th>195593</th>
+            <th>398</th>
         </tr>
         </tbody>
     </table>
 
-    <p>Динамика количества вакансий по годам</p>
-    <table border="1" class="dataframe">
-        <thead>
-        <tr>
-            <th>Год</th>
-            <th>Количество вакансий</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>2023</th>
-            <th>2023</th>
-        </tr>
-        </tbody>
-    </table>
+    <div class="diagrams">
+        <div>
+            <p>Динамика уровня зарплат по годам</p>
+            <img src="{% static 'demand/img/заглушка график.jpg' %}">
+        </div>
+        <div>
+            <p>Динамика количества вакансий по годам</p>
+            <img src="{% static 'demand/img/заглушка график.jpg' %}">
+        </div>
+    </div>
+
 
 {% endblock %}

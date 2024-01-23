@@ -1,28 +1,114 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}Востребованность{% endblock %}
+{% block title %}Навыки{% endblock %}
 
 {% block content %}
     <h2>Навыки</h2>
 
-    <p>ТОП-20 навыков по годам</p>
-        <table border="1" class="dataframe">
-        <thead>
-        <tr>
-            <th>Год</th>
-            <th>Количество вакансий</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>2023</th>
-            <th>2023</th>
-        </tr>
-        </tbody>
+    <h3>ТОП-20 навыков ios разработчика</h3>
+    <table border="1" class="dataframe">
+    <thead>
+    <tr>
+        <th>Навык</th>
+        <th>Количество навыков</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>iOS</th>
+        <th>5562</th>
+    </tr>
+    <tr>
+        <th>Swift</th>
+        <th>3026</th>
+    </tr>
+    <tr>
+        <th>Objective-C</th>
+        <th>2842</th>
+    </tr>
+    <tr>
+        <th>Git</th>
+        <th>2404</th>
+    </tr>
+    <tr>
+        <th>ООП</th>
+        <th>1653</th>
+    </tr>
+    <tr>
+        <th>Xcode</th>
+        <th>1049</th>
+    </tr>
+    <tr>
+        <th>Android</th>
+        <th>829</th>
+    </tr>
+    <tr>
+        <th>Mac Os</th>
+        <th>632</th>
+    </tr>
+    <tr>
+        <th>Java</th>
+        <th>480</th>
+    </tr>
+    <tr>
+        <th>MVVM</th>
+        <th>452</th>
+    </tr>
+    <tr>
+        <th>swift</th>
+        <th>431</th>
+    </tr>
+    <tr>
+        <th>Английский язык</th>
+        <th>411</th>
+    </tr>
+    <tr>
+        <th>REST</th>
+        <th>383</th>
+    </tr>
+    <tr>
+        <th>UIKit</th>
+        <th>363</th>
+    </tr>
+    <tr>
+        <th>C++</th>
+        <th>354</th>
+    </tr>
+    <tr>
+        <th>MVC</th>
+        <th>352</th>
+    </tr>
+    <tr>
+        <th>REST</th>
+        <th>383</th>
+    </tr>
+    <tr>
+        <th>Atlassian Jira</th>
+        <th>326</th>
+    </tr>
+    <tr>
+        <th>Realm</th>
+        <th>325</th>
+    </tr>
+    <tr>
+        <th>SQL</th>
+        <th>323</th>
+    </tr>
+    <tr>
+        <th>iOS SDK</th>
+        <th>304</th>
+    </tr>
+
+    </tbody>
     </table>
 
-    <p>ТОП-20 навыков по годам</p>
-    <img src="{% static 'demand/img/заглушка график.jpg' %}">
+    <div class="diagrams">
+        <div>
+            <p>ТОП-20 навыков по годам</p>
+            <img src="{% static 'demand/img/заглушка график.jpg' %}">
+        </div>
+    </div>
+
 
 {% endblock %}

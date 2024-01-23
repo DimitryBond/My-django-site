@@ -26,12 +26,16 @@
 
                 <p class="caption">Тема</p>
                 <ul class="theme-switcher">
-                <li>
-                    <button class="theme-button-dark" type="button">🌚</button>
-                </li>
-                <li>
-                    <button class="theme-button-light active" type="button">🌝</button>
-                </li>
+                    <li>
+                        <button class="theme-button-dark" type="button">
+                            <img src="{% static 'main/img/blackMoon.png' %}" width="50">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="theme-button-light" type="button">
+                            <img src="{% static 'main/img/lightMoon.png' %}" width="50">
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,17 +65,8 @@
           <p class="">Проект на Django:</p>
           <p class="">Бондаренко Дмитрий Андреевич</p>
           <p>РИ-220934</p>
+            <p>IOS-разработчик</p>
         </div>
-        <ul class="footer-navigation-topics">
-          <li class="footer-navigation-topic">
-            <h2>Ссылки</h2>
-            <ul class="footer-navigation">
-              <li class="footer-navigation-item">
-                <a href="https://github.com/DimitryBond/My-django-site">ГитХаб</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </footer>
     <script src="{% static 'main/js/Sidenav.js' %}"></script>
